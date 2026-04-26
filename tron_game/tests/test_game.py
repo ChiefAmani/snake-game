@@ -1,7 +1,7 @@
 import pytest
 import pygame
-from tron_game.src.player import Player
-from tron_game.src.constants import GRID_SIZE, SCREEN_WIDTH, SCREEN_HEIGHT, PLAYER1_COLOR, PLAYER1_UP, PLAYER1_DOWN, PLAYER1_LEFT, PLAYER1_RIGHT
+from ..src.player import Player
+from ..src.constants import GRID_SIZE, SCREEN_WIDTH, SCREEN_HEIGHT, PLAYER1_COLOR, PLAYER1_UP, PLAYER1_DOWN, PLAYER1_LEFT, PLAYER1_RIGHT
 
 # Initialize Pygame for font rendering in tests
 pygame.init()
