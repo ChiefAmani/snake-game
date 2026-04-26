@@ -57,3 +57,31 @@ N/A (Standalone desktop game)
 
 ## Dependencies
 pygame==2.5.2
+
+## README.md Content Specification
+The `README.md` file located in the `tron_game/` directory must include the following sections to ensure the game is properly documented for a GitHub repository:
+
+### 1. Project Title and Description
+- Clear and concise title: "2D Tron Game"
+- Brief description of the game and its objective.
+
+### 2. Features
+- A bulleted list of core game features (e.g., two-player local multiplayer, real-time movement, collision detection, score tracking).
+
+### 3. How to Run the Game
+#### Installation
+- Instructions on how to clone the repository.
+- Steps to set up a Python virtual environment (recommended).
+- Command to install dependencies from `requirements.txt`.
+
+#### Execution
+- Command to run the `main.py` file.
+
+### 4. Controls
+- A clear mapping of keys for each player's movement (e.g., Player 1: WASD, Player 2: Arrow Keys).
+
+### 5. Future Enhancements (Optional)
+- A section outlining potential future additions or improvements to the game.
+
+### 6. License
+- Information about the project's license (e.g., MIT License).
