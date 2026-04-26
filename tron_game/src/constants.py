@@ -1,0 +1,39 @@
+import pygame
+
+# Screen dimensions
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+GRID_SIZE = 20
+
+# Colors
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+BLUE = (0, 255, 255)
+RED = (255, 0, 0)
+YELLOW = (255, 255, 0)
+GREEN = (0, 255, 0)
+
+# Player 1 settings
+PLAYER1_START_POS = (SCREEN_WIDTH // 4, SCREEN_HEIGHT // 2)
+PLAYER1_COLOR = BLUE
+PLAYER1_UP = pygame.K_w
+PLAYER1_DOWN = pygame.K_s
+PLAYER1_LEFT = pygame.K_a
+PLAYER1_RIGHT = pygame.K_d
+
+# Player 2 settings
+PLAYER2_START_POS = (SCREEN_WIDTH * 3 // 4, SCREEN_HEIGHT // 2)
+PLAYER2_COLOR = RED
+PLAYER2_UP = pygame.K_UP
+PLAYER2_DOWN = pygame.K_DOWN
+PLAYER2_LEFT = pygame.K_LEFT
+PLAYER2_RIGHT = pygame.K_RIGHT
+
+# Game settings
+FPS = 10
+WINNING_SCORE = 3
+
+# Game States
+START_SCREEN = 0
+PLAYING = 1
+GAME_OVER = 2
