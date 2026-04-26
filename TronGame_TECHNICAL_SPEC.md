@@ -7,6 +7,32 @@ This project aims to develop a 2D Tron-style game where two players control ligh
 - Python==3.9.13 (or latest stable 3.9.x)
 - Pygame==2.5.2
 
+## Development Environment Setup
+For Windows users encountering build errors during Pygame installation (e.g., `FileNotFoundError: [WinError 2] The system cannot find the file specified` related to `pacman`), it is recommended to install a pre-built wheel of Pygame.
+
+1.  **Create and Activate a Virtual Environment:**
+    ```bash
+    python -m venv venv
+    # On Windows
+    .\venv\Scripts\activate
+    # On macOS/Linux
+    source venv/bin/activate
+    ```
+
+2.  **Install Pygame (Windows Specific):**
+    If `pip install pygame==2.5.2` fails due to compilation issues, download the appropriate pre-built wheel (`.whl` file) for your Python version and Windows architecture from a reliable source (e.g., unofficial Windows binaries often found on sites like `https://www.lfd.uci.edu/~gohlke/pythonlibs/` or similar community-maintained repositories).
+    Then install it using pip:
+    ```bash
+    pip install path/to/pygame-2.5.2-cpXX-cpXX-win_amd64.whl
+    ```
+    (Replace `cpXX-cpXX` with your Python version, e.g., `cp39-cp39` for Python 3.9, and `win_amd64` with your architecture if different).
+
+3.  **Install Other Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    (Ensure `requirements.txt` only contains `pygame==2.5.2` or other non-Pygame dependencies if Pygame was installed via wheel).
+
 ## File Tree
 tron_game/
 - src/
@@ -73,6 +99,7 @@ The `README.md` file located in the `tron_game/` directory must include the foll
 - Instructions on how to clone the repository.
 - Steps to set up a Python virtual environment (recommended).
 - Command to install dependencies from `requirements.txt`.
+- **Crucially, for Windows users, add a note about potential Pygame build issues and recommend installing a pre-built wheel if `pip install pygame` fails.**
 
 #### Execution
 - Command to run the `main.py` file.
